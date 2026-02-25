@@ -1,4 +1,4 @@
-# workspace-context-pack
+# agent-context-pack
 
 **Persistent memory for AI agents, version-controlled and synced through GitHub.**
 
@@ -41,12 +41,17 @@ Because it's in git:
 
 **Your agents finally have a shared brain.**
 
+## Use as a Template
+
+Click **"Use this template"** on GitHub to scaffold a new repo with the context pack structure already in place.
+
 ## Install as a Skill
 
 ### Claude Code
 
 ```bash
-cp -r skill/workspace-context-pack ~/.claude/skills/workspace-context-pack
+gh repo clone JasonCZMeng/agent-context-pack
+cp -r agent-context-pack/skill/workspace-context-pack ~/.claude/skills/workspace-context-pack
 ```
 
 Claude Code auto-discovers it. When you set up a new repo or add context to an existing one, it uses this skill automatically.
